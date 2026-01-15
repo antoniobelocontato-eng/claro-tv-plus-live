@@ -1,0 +1,39 @@
+:root{
+  --claro-red:#e60000;
+  --bg:#f5f6f8;
+  --card:#ffffff;
+  --text:#111;
+  --muted:#6b7280;
+  --border:rgba(0,0,0,.06);
+  --shadow:0 10px 24px rgba(0,0,0,.06);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.container{max-width:1200px;margin:0 auto;padding:18px 14px 28px}
+.header{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:14px;border:1px solid var(--border)}
+.brandbar{height:8px;background:var(--claro-red)}
+.headerinner{padding:16px}
+.h1{margin:0;font-size:22px;font-weight:900}
+.sub{margin:6px 0 0;color:var(--muted);font-weight:700;font-size:13px;line-height:1.3}
+.grid6{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:900px){.grid6{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.grid6{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);border-radius:var(--radius);padding:14px}
+.logoCard{display:flex;align-items:center;justify-content:center;min-height:120px;cursor:pointer;transition:transform .08s ease}
+.logoCard:hover{transform:translateY(-1px)}
+.logoText{font-weight:900;font-size:18px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pill{background:#f2f3f5;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900}
+.sectionTitle{margin:0 0 10px;font-size:14px;font-weight:900}
+.list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.item{background:#fafafa;border:1px solid var(--border);border-radius:14px;padding:10px}
+.itemHead{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.itemTitle{font-weight:900;font-size:13px}
+.syn{margin:6px 0 0;color:#444;font-size:12px;line-height:1.35;font-weight:600}
+.link{color:var(--claro-red);text-decoration:none;font-weight:900;font-size:12px}
+.link:hover{text-decoration:underline}
+.badge{background:#111;color:#fff;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:900}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:900px){.twocol{grid-template-columns:1fr}}
