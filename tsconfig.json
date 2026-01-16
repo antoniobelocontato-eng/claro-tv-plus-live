@@ -5,7 +5,7 @@
 
     "baseUrl": ".",
     "paths": {
-      "@/": ["./*"]
+      "@/": ["./"]
     },
 
     "allowJs": true,
@@ -18,10 +18,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      { "name": "next" }
-    ]
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",

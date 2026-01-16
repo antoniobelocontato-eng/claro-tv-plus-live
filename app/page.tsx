@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PLATFORMS } from "@/data/platforms";
+import { PLATFORMS } from "../data/platforms";
 
 export default function Home() {
   return (

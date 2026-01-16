@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { PLATFORMS } from "@/data/platforms";
-import { buildPlatformBlock } from "@/lib/refresh/buildBlock";
-import { setCachedBlock } from "@/lib/store/cache";
+import { PLATFORMS } from "../../../../data/platforms";
+import { buildPlatformBlock } from "../../../../lib/refresh/buildBlock";
+import { setCachedBlock } from "../../../../lib/store/cache";
 
 export async function GET(req: Request) {
   const secret = process.env.CRON_SECRET;

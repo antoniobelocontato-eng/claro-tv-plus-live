@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { PLATFORMS, PlatformKey } from "@/data/platforms";
 import { getCachedBlock } from "@/lib/store/cache";
-import { TitleCard } from "@/components/TitleCard";
+import { PLATFORMS } from "../../../data/platforms";
 
 export default async function StreamingPage({ params }: { params: { platform: PlatformKey } }) {
   const p = PLATFORMS.find((x) => x.key === params.platform);
